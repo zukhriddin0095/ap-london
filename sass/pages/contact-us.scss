@@ -1,0 +1,163 @@
+@use "../global";
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../layout/container";
+@use "../layout/footer";
+@use "../layout/header";
+
+.contact-us {
+  padding-top: 170px;
+  .news__nav {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    h1 {
+      width: 1px;
+      height: 15px;
+      background: #b0b0b0;
+    }
+    a {
+      color: #b0b0b0;
+      font-size: 14px;
+      font-family: "Open Sans";
+      letter-spacing: 0.42px;
+      text-transform: capitalize;
+      &:last-child {
+        color: #bb2339;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 57px;
+    color: #242424;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Cera Round Pro DEMO";
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1.92px;
+    text-transform: capitalize;
+  }
+  .contact__social {
+    padding-left: 0;
+    cursor: pointer;
+    li {
+      margin-bottom: 15px;
+      padding: 20px;
+      max-width: 420px;
+      border-radius: 14px;
+      border: 1px solid rgba(36, 36, 36, 0.1);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      img {
+        padding: 18px;
+        border: 1px solid rgba(36, 36, 36, 0.05);
+        border-radius: 60px;
+        background: rgba(36, 36, 36, 0.05);
+        color: rgba(36, 36, 36, 1);
+      }
+      .contact__intro {
+        h4 {
+          color: #242424;
+          font-size: 22px;
+          font-family: "Open Sans";
+          font-weight: 600;
+          line-height: 34px;
+        }
+        h6 {
+          color: #242424;
+          font-size: 14px;
+          font-family: "Open Sans";
+          opacity: 0.699999988079071;
+        }
+      }
+    }
+  }
+}
+
+.contact__messege {
+  padding: 40px 40px 50px 40px;
+  border-radius: 14px;
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  background: #fff;
+  span {
+    color: #242424;
+    font-size: 38px;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  p {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    max-width: 565px;
+    color: #242424;
+    font-size: 16px;
+    font-family: Open Sans;
+    line-height: 24px;
+    opacity: 0.699999988079071;
+  }
+  .contact__inputs {
+    margin-right: 20px;
+    input {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      width: 100%;
+      height: 58px;
+      color: #333;
+      font-size: 16px;
+      font-family: "Open Sans";
+      opacity: 0.6000000238418579;
+      border-radius: 12px;
+      border: 1px solid rgba(51, 34, 68, 0.1);
+      background: #fff;
+    }
+  }
+  .inp__Messege {
+    margin-bottom: 43px;
+    padding-left: 15px;
+    width: 100%;
+    height: 140px;
+    color: #333;
+    font-size: 16px;
+    font-family: "Open Sans";
+    opacity: 0.6000000238418579;
+    border-radius: 12px;
+    border: 1px solid rgba(51, 34, 68, 0.1);
+    background: #fff;
+  }
+  a {
+    padding: 18px 40px;
+    border-radius: 39px;
+    paint-order: 1px solid #bb2339;
+    background: var(--qizil, #bb2339);
+    color: #fff;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    transition: 0.5s ease;
+    &:hover {
+      background: transparent;
+      border: 1px solid var(--qizil, #bb2339);
+      color: #242424;
+    }
+  }
+}
+
+.location {
+  padding-top: 110px;
+  h3 {
+    margin-bottom: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 38px;
+    font-family: "Cera Round Pro DEMO";
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1.14px;
+    text-transform: capitalize;
+  }
+
+}

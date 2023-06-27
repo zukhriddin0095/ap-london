@@ -1,0 +1,26 @@
+@use "base/typography";
+@use "base/reset";
+@use "layout/container";
+
+.scrolltop {
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: rgb(175, 80, 80) url("../images/home/btopred.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgb(85, 23, 23);
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.scrolltop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}

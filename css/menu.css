@@ -1,0 +1,580 @@
+@import url("https://fonts.cdnfonts.com/css/cera-round-pro-demo");
+@import url("https://fonts.cdnfonts.com/css/open-sans");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1340px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrolltop {
+  position: fixed;
+  bottom: 800px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgb(175, 80, 80) url("../images/home/btopred.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgb(85, 23, 23);
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.scrolltop.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: rgb(187, 35, 57);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.navbar ul {
+  gap: 40px;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #f5f5f5;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.navbar ul li a {
+  font-family: "Open Sans";
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+}
+.navbar ul li:last-child a {
+  padding: 8px 40px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: transparent;
+  transition: 0.5s;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+.navbar ul li:last-child a:hover {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3647058824);
+  color: rgb(187, 35, 57);
+}
+
+.toogle {
+  display: none;
+}
+@media (max-width: 960px) {
+  .toogle {
+    display: block;
+  }
+}
+.toogle .bg-danger {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.toogle .bg-danger ul {
+  padding-bottom: 100%;
+}
+.toogle .bg-danger ul li {
+  margin-top: 10px;
+}
+.toogle .bg-danger ul li a {
+  color: aliceblue;
+  font-size: 25px;
+}
+.toogle .header__aside {
+  gap: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newslatter__wrapper {
+  position: relative;
+  bottom: -200px;
+  padding: 64px 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: var(--qizil, #bb2339);
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  background: rgb(187, 35, 57);
+}
+.newslatter__wrapper h5 {
+  color: var(--ffffff, white);
+  font-size: 23px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.newslatter__wrapper h3 {
+  margin-bottom: 24px;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+.newslatter__wrapper p {
+  margin-bottom: 64px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+.newslatter__wrapper .newslatter__input {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+@media (max-width: 600px) {
+  .newslatter__wrapper .newslatter__input {
+    flex-direction: column;
+  }
+  .newslatter__wrapper .newslatter__input input {
+    width: 100%;
+  }
+}
+.newslatter__wrapper input {
+  padding: 15px;
+  width: 635px;
+  height: 52px;
+  outline: none;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid rgba(245, 239, 219, 0.5);
+}
+.newslatter__wrapper button {
+  padding: 8px 40px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: transparent;
+  transition: 0.5s;
+  color: white;
+}
+.newslatter__wrapper button:hover {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3647058824);
+  color: rgb(187, 35, 57);
+}
+
+.footer__end {
+  background: rgb(187, 35, 57);
+}
+.footer__end p {
+  padding-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+
+.footer__wrapper {
+  padding-top: 317px;
+  padding-bottom: 80px;
+}
+.footer__wrapper .footer__left {
+  text-align: center;
+}
+.footer__wrapper .footer__left h5 {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Cera Round Pro DEMO";
+  line-height: 130%;
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.footer__wrapper .footer__left address {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+.footer__wrapper .footer__left .footer__tells {
+  display: flex;
+  flex-direction: column;
+}
+.footer__wrapper .footer__left .footer__tells a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+.footer__wrapper .footer__center {
+  text-align: center;
+}
+@media (max-width: 740px) {
+  .footer__wrapper .footer__center img {
+    width: 100%;
+  }
+}
+.footer__wrapper .footer__center p {
+  margin-top: 32px;
+  margin-bottom: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+.footer__wrapper .footer__center .footer__social {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.footer__wrapper .footer__center .footer__social:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+.footer__wrapper .footer__center .footer__social a {
+  margin-left: 16px;
+  color: white;
+  font-size: 35px;
+}
+.footer__wrapper .footer__center .footer__social a i {
+  transition: 0.5s;
+}
+.footer__wrapper .footer__center .footer__social a i:hover {
+  transform: rotate(15deg) scale(1.5);
+  color: aqua;
+}
+.footer__wrapper .footer__right {
+  text-align: center;
+}
+.footer__wrapper .footer__right h5 {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Cera Round Pro DEMO";
+  line-height: 130%;
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.footer__wrapper .footer__right p {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  max-width: 159px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+
+.instagram {
+  margin-top: 120px;
+  background: #f5f5f5;
+  padding-top: 128px;
+  padding-bottom: 130px;
+}
+.instagram .inst__aside h5 {
+  color: #242424;
+  font-size: 23px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.instagram .inst__aside h3 {
+  color: #242424;
+  font-size: 48px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+.instagram .inst__aside p {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: #aaa;
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+.instagram .inst__aside a {
+  color: #242424;
+  font-size: 16px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  padding: 10px 32px;
+  border-radius: 100px;
+  border: 1px solid var(--qizil, #bb2339);
+  background: transparent;
+  transition: 0.5s;
+}
+.instagram .inst__aside a:hover {
+  background: var(--qizil, #bb2339);
+  color: white;
+}
+.instagram .inst__bside .inst__card {
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.instagram .inst__bside .inst__card::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 1px;
+  bottom: -50px;
+  right: -50px;
+  border-radius: 2%;
+  background: rgba(14, 14, 14, 0.5411764706);
+  transition: all 0.5s ease;
+}
+.instagram .inst__bside .inst__card:hover::after {
+  width: 500px;
+  height: 500px;
+}
+.instagram .inst__bside .inst__card:hover i {
+  top: 40%;
+  right: 40%;
+}
+.instagram .inst__bside .inst__card i {
+  position: absolute;
+  transition: 0.5s ease;
+  font-size: 55px;
+  color: #fff;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.menu {
+  padding-top: 170px;
+}
+.menu .news__nav {
+  padding-bottom: 70px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.menu .news__nav h1 {
+  width: 1px;
+  height: 15px;
+  background: #b0b0b0;
+}
+.menu .news__nav a {
+  color: #b0b0b0;
+  font-size: 14px;
+  font-family: "Open Sans";
+  letter-spacing: 0.42px;
+  text-transform: capitalize;
+}
+.menu .news__nav a:last-child {
+  color: #bb2339;
+}
+.menu .menu-left {
+  height: 844px;
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: var(--qizil, #bb2339);
+}
+.menu .menu-left h3 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Cera Round Pro DEMO";
+  font-weight: 500;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+.menu .menu-left .nav-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show.nav-link {
+  padding: 8px 40px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: transparent;
+  transition: 0.5s;
+  background: rgb(187, 35, 57);
+}
+.nav-pills .nav-link.active:hover,
+.nav-pills .show.nav-link:hover {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3647058824);
+  color: rgb(187, 35, 57);
+}
+
+.nav-pills {
+  gap: 16px;
+  padding-bottom: 60px;
+}
+.nav-pills .nav-link {
+  border-radius: 100px;
+  border: 1px solid var(--qizil, #bb2339);
+  background: transparent;
+  transition: 0.5s;
+  border-radius: 0.375rem;
+  border: 1px solid #fff;
+  color: #f5f5f5;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+.nav-pills .nav-link:hover {
+  background: var(--qizil, #bb2339);
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #242424 !important;
+  background-color: #f5f5f5 !important;
+}
+
+.nav-pills .nav-link {
+  border-radius: 100px !important;
+}
+
+.menu__card {
+  padding: 30px 30px 50px 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  background: #fff;
+  text-align: center;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.menu__card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  transform: rotate(-1deg) scale(1.1);
+}
+.menu__card:hover img {
+  transform: rotate(15deg) scale(1.1);
+}
+.menu__card img {
+  transition: all 0.5s ease;
+}
+.menu__card p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #242424;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.menu__card h5 {
+  color: var(--qizil, #bb2339);
+  text-align: center;
+  font-size: 24px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.menu__card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.menu__card::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 30px;
+  background: rgb(187, 35, 57);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.menu__card:hover::after {
+  width: 600px;
+  height: 600px;
+}
+.menu__card:hover p {
+  color: white;
+}
+.menu__card:hover h5 {
+  color: #fff;
+}

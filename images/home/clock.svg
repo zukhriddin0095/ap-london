@@ -1,0 +1,33 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#E5E5E5"/>
+<g id="Restaurant Home" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="7728" transform="translate(-434 -3778)" fill="white"/>
+<rect id="Rectangle 33" x="-434" y="-429" width="1920" height="645" fill="#F4F4F4"/>
+<g id="Group 40888">
+<g id="Group 40885">
+<g id="Rectangle 3308">
+<rect x="-124" y="-152" width="410" height="198" rx="10" fill="white"/>
+<rect x="-123.5" y="-151.5" width="409" height="197" rx="9.5" stroke="#333333" stroke-opacity="0.1"/>
+</g>
+<g id="Group 40802">
+<g id="Group 40789">
+<g id="Group 40786" opacity="0.5">
+<g id="clock" clip-path="url(#clip1_0_1)">
+<path id="Vector" d="M8.00065 14.6654C11.6825 14.6654 14.6673 11.6806 14.6673 7.9987C14.6673 4.3168 11.6825 1.33203 8.00065 1.33203C4.31875 1.33203 1.33398 4.3168 1.33398 7.9987C1.33398 11.6806 4.31875 14.6654 8.00065 14.6654Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8 4V8L10.6667 9.33333" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="7728" fill="white" transform="translate(-434 -3778)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
